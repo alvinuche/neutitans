@@ -1,0 +1,40 @@
+#user {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 0.5rem 1.5rem;
+	padding: 0 1rem;
+	justify-content: center;
+	margin: 6rem auto;
+}
+
+.user-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--clr-primary-1);
+}
+
+.user-img {
+	height: 150px;
+	width: 150px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-bottom: 1.3rem;
+}
+.user-img img {
+	line-height: 150px;
+	margin-top: 0.5rem;
+}
+.user-content p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.user-content h4 {
+	margin-bottom: 0.5rem;
+}
+.user-content p {
+	font-size: 0.75rem;
+}

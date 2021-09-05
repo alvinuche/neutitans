@@ -1,0 +1,29 @@
+#main {
+	padding: 0 1rem;
+	margin-bottom: 4rem;
+}
+.feature-box {
+	margin: 0 auto 10rem;
+}
+
+.feature-box-header {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.feature-box-header h3 {
+	font-size: 1.75rem;
+	color: var(--clr-primary-1);
+}
+.feature-card-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.5rem 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+	.feature-box-header h3 {
+		font-size: 2rem;
+		color: var(--clr-primary-1);
+	}
+}

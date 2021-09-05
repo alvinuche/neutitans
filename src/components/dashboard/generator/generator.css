@@ -1,0 +1,115 @@
+#generator {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+
+.graph {
+	flex: 9;
+}
+
+.graph-side {
+	flex: 3;
+}
+
+.graph-box {
+	/* min-height: 15rem; */
+	margin-bottom: 1rem;
+	max-width: 92%;
+}
+
+.emission {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.dash-card {
+	background: #f4fdfd;
+	border-radius: 10px;
+	/* min-height: 200px; */
+}
+
+.emission .first-card {
+	/* padding: 1rem 2rem; */
+	width: 300px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-right: 1.5rem;
+}
+
+.first-card small {
+	color: #0fb0ba;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.rate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.world-map {
+	padding: 0.1rem 0;
+}
+.world-map h4 {
+	text-align: center;
+	color: #01219a;
+}
+.world-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1.5rem;
+}
+.world-box small {
+	font-size: 0.5rem;
+}
+
+.fuel-card {
+	padding: 2rem 3rem;
+}
+
+.graph-side {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.graph-side-box {
+	display: flex;
+	margin-bottom: 1.1rem;
+}
+
+.graph-side-img {
+	/* display: inline-block; */
+	height: 40px;
+	width: 40px;
+	background-color: #01219a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.side-green {
+	background-color: #0fb0ba;
+}
+.side-pink {
+	background-color: #e5acff;
+}
+#select {
+	background: #f3f5f8;
+	border: none;
+	padding: 0.875rem 1rem;
+	border-radius: 8px;
+}
+#select:focus {
+	outline: none;
+}

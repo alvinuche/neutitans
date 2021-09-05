@@ -1,0 +1,33 @@
+#aside {
+	height: 100%;
+	margin-top: 2rem;
+}
+.side-logo-box {
+	margin-bottom: 2rem;
+}
+.side-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	min-height: 500px;
+}
+.side-box-top,
+.side-box-bottom {
+	margin-left: 1rem;
+}
+.side-links {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.side-links span {
+	margin-right: 1rem;
+}
+.side-links p {
+	color: var(--clr-grey-5);
+}
+.side-links .first-link {
+	color: var(--clr-primary-1);
+}

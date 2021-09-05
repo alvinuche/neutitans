@@ -1,0 +1,18 @@
+#layout {
+	height: 100vh;
+	width: 100%;
+	background: rgba(239, 217, 246, 0.46);
+	overflow-y: hidden;
+}
+.layout-box {
+	display: flex;
+	padding: 1rem;
+}
+
+#aside {
+	flex: 2;
+}
+
+#side-dashboard {
+	flex: 10;
+}

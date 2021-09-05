@@ -1,0 +1,37 @@
+#nav {
+	width: 100%;
+}
+
+.nav-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* width: 100%; */
+	padding: 1rem 0;
+}
+
+.nav-box-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* padding: 1rem 0; */
+
+	/* min-width: 250px; */
+}
+
+.link-icon {
+	width: 30px;
+}
+.hide-link {
+	margin-right: 3rem;
+}
+
+.last-box-link {
+	padding-right: 1rem;
+	margin-top: 0.5rem;
+}
+@media screen and (max-width: 47em) {
+	.hide-link {
+		display: none;
+	}
+}

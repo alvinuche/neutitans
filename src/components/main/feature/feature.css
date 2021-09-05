@@ -1,0 +1,19 @@
+.feat-card {
+	border: 1px solid var(--clr-primary-2);
+	padding: 1rem;
+	box-shadow: 0px 0px 8px 1px rgba(156, 185, 187, 0.4);
+	border-radius: 8px;
+	max-width: 369px;
+	/* margin: 0 auto; */
+}
+.feat-card-img {
+	margin-bottom: 1.5rem;
+}
+.feat-card-content h5 {
+	color: var(--clr-primary-1);
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+.feat-card-content p {
+	color: var(--clr-grey-5);
+}
