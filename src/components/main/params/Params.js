@@ -3,7 +3,7 @@ import React from "react";
 import pics from "../../../assets/images/woman.png";
 import "./params.css";
 
-function Params() {
+function Params({ click }) {
 	return (
 		<div id="params">
 			<div className="params-box">
@@ -15,21 +15,23 @@ function Params() {
 						generator use?{" "}
 					</p>
 					<p>
+						<span className="params-square"></span>What is the tank capacity of
+						your generator?{" "}
+					</p>
+					<p>
 						<span className="params-square"></span>How many hours do you run
-						your generator daily?{" "}
+						your generator in a day?{" "}
 					</p>
 					<p>
-						<span className="params-square"></span>How many days in a week do
-						you run your generator?{" "}
-					</p>
-					<p>
-						<span className="params-square"></span>How many days in a week do
-						you run your generator?{" "}
+						<span className="params-square"></span>What is the power rating of
+						your generator?{" "}
 					</p>
 				</div>
 
 				<div className="params-box">
-					<button className="btn">Get Started</button>
+					<button className="btn" onClick={click}>
+						Get Started
+					</button>
 				</div>
 			</div>
 

@@ -11,7 +11,7 @@ function App() {
 		setShowDash(!showDash);
 	};
 
-	return <>{showDash ? <Dashboard /> : <Home  show={showDashboard}/>}</>;
+	return <>{showDash ? <Dashboard /> : <Home show={showDashboard} />}</>;
 }
 
 export default App;

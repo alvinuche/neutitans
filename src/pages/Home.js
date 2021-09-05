@@ -8,7 +8,7 @@ import Users from "../components/users/Users";
 
 import "../index.css";
 
-function Home({show}) {
+function Home({ show }) {
 	const [showModal, setShowModal] = useState(false);
 
 	const handleClick = () => {
@@ -22,12 +22,12 @@ function Home({show}) {
 
 				<div className="header-main">
 					<Header handleClick={handleClick} />
-					<Main />
+					<Main handleClick={handleClick} />
 					<Users />
 					<Footer />
 				</div>
 			</div>
-			<Modal showModal={showModal}  handleClick={handleClick} show={show}/>
+			<Modal showModal={showModal} handleClick={handleClick} show={show} />
 		</div>
 	);
 }

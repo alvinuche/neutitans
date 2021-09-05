@@ -59,7 +59,7 @@ function Modal({ showModal, handleClick, show }) {
 
 						{error && (
 							<p style={{ color: "#f00", fontSize: "0.875rem" }}>
-								Invalid field inputs
+								Invalid input field
 							</p>
 						)}
 

@@ -5,7 +5,7 @@ import { featureData } from "./feature/data";
 import "./main.css";
 import Params from "./params/Params";
 
-function Main() {
+function Main({handleClick}) {
 	return (
 		<main id="main">
 			<div className="feature-box">
@@ -20,7 +20,7 @@ function Main() {
 				</div>
 			</div>
 
-			<Params />
+			<Params click={handleClick}/>
 		</main>
 	);
 }

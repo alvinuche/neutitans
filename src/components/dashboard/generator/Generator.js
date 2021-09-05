@@ -7,6 +7,8 @@ import gasoline from "../../../assets/images/gasoline.png";
 import stopwatch from "../../../assets/images/stopwatch.png";
 import sandclock from "../../../assets/images/sandclock.png";
 
+import { num } from "./data";
+
 function Generator() {
 	return (
 		<div id="generator">
@@ -51,7 +53,29 @@ function Generator() {
 					>
 						Input Parameters
 					</h5>
+
 					<div className="graph-side-box">
+						<span className="graph-side-img side-pink">
+							<img src={sandclock} alt="gasoline" width="50%" />
+						</span>
+						<div>
+							<input
+								type="number"
+								id="select"
+								placeholder="Power Rating (Kw)"
+							/>
+						</div>
+					</div>
+
+					<div className="graph-side-box">
+						<span className="graph-side-img side-pink">
+							<img src={sandclock} alt="gasoline" width="50%" />
+						</span>
+						<div>
+							<input type="number" id="select" placeholder="Tank Size (L)" />
+						</div>
+					</div>
+					{/* <div className="graph-side-box">
 						<span className="graph-side-img side-green">
 							<img src={gasoline} alt="gasoline" width="50%" />
 						</span>
@@ -61,15 +85,15 @@ function Generator() {
 							<option value="Per Week">Per Week</option>
 							<option value="Per Year">Per Year</option>
 						</select>
-					</div>
+					</div> */}
 					<div className="graph-side-box">
 						<span className="graph-side-img">
 							<img src={gasoline} alt="gasoline" width="50%" />
 						</span>
 						<select name="" id="select">
 							<option value="">Fuel Type</option>
-							<option value="Diesel">Diesel</option>
-							<option value="Petrol">Petrol</option>
+							<option value="diesel">Diesel</option>
+							<option value="petrol">Petrol</option>
 						</select>
 					</div>
 					<div className="graph-side-box">
@@ -78,22 +102,9 @@ function Generator() {
 						</span>
 						<select name="" id="select">
 							<option value="">Usage(Hours)</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-						</select>
-					</div>
-					<div className="graph-side-box">
-						<span className="graph-side-img side-pink">
-							<img src={sandclock} alt="gasoline" width="50%" />
-						</span>
-						<select name="" id="select">
-							<option value="">Usage(Days)</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
+							{num.map((num) => (
+								<option value={num}>{num}</option>
+							))}
 						</select>
 					</div>
 				</div>
